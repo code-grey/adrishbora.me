@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div id="decryption-text" class="glitch-text">INITIALIZING SYSTEM...</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <div class="loading-status">Authenticating user...</div>
+        </div>
+    </div>
+
     <canvas id="bg-canvas"></canvas>
 
     <nav>
@@ -111,7 +121,7 @@
                         <li>Implemented an immutable audit trail on the Solana Blockchain.</li>
                         <li>Containerized microservices stack using Docker Compose.</li>
                     </ul>
-                    <a href="#" class="project-link">View Code</a>
+                    <a href="https://github.com/code-grey/SafeRide" target="_blank" class="project-link">View Code</a>
                 </div>
 
                 <div class="card project-card">
@@ -128,7 +138,10 @@
                         <li>Reduced data ingestion latency by 80% (10s → 2s) via concurrent Goroutines.</li>
                         <li>Designed a thread-safe SQLite caching layer with mutex locking.</li>
                     </ul>
-                    <a href="#" class="project-link">View Code</a>
+                    <div class="project-actions">
+                        <a href="https://github.com/code-grey/Threatfeed" target="_blank" class="project-link">View Code</a>
+                        <a href="https://newsaggregator-hisw.onrender.com/static/" target="_blank" class="project-link">Live Demo</a>
+                    </div>
                 </div>
             </div>
         </section>
