@@ -3,59 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrish Bora</title>
+    <title>Adrish Bora | Software Engineer</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">Adrish Bora</div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <h1>Adrish Bora</h1>
-            <p>Computer Science Student & Aspiring Software Engineer</p>
+        <h1>Adrish Bora</h1>
+        <p>Computer Science Student & Aspiring Software Engineer</p>
+        <div class="bio">
+            Building scalable systems, exploring cybersecurity, and orchestrating distributed networks.
+        </div>
+        <div class="cta-group">
+            <a href="#projects" class="btn btn-primary">View Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/code-grey" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/adrishbora" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/code_grey_adr" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
     </header>
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>A passionate and driven Computer Science student with a strong foundation in building scalable and efficient software solutions. My primary interests lie in distributed systems, concurrency, and cybersecurity, and I am always eager to learn and apply new technologies to solve complex problems.</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <p>I am a B.Tech Computer Science and Engineering student at Gauhati University Institute of Science and Technology (2023 - 2027). My passion lies in architecting scalable software solutions, with a deep interest in distributed systems, concurrency, and cybersecurity. I thrive in hackathons and open-source communities, constantly pushing the boundaries of what I can build.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="card">
+                    <div class="exp-header">
+                        <h3>CNCF (Cloud Native Computing Foundation) Guwahati</h3>
+                        <span class="exp-date">Oct 2024 – Present</span>
+                    </div>
+                    <span class="exp-role">Website Manager & Core Team</span>
+                    <ul class="exp-list">
+                        <li>Overseeing digital infrastructure and GitHub organization, ensuring readiness for community events.</li>
+                        <li>Maintaining static web assets for continuous availability and accurate information.</li>
+                        <li>Aligning technical resources with the core team's roadmap for open-source initiatives.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="exp-header">
+                        <h3>Airports Authority of India</h3>
+                        <span class="exp-date">June 2025 (Incoming)</span>
+                    </div>
+                    <span class="exp-role">Summer Intern (Software & Networking)</span>
+                    <ul class="exp-list">
+                        <li>Analyzing enterprise-scale IT Asset Management protocols and critical aviation network infrastructure.</li>
+                        <li>Monitoring high-availability server racks and network switches.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="exp-header">
+                        <h3>Google Solution Challenge</h3>
+                        <span class="exp-date">Jan 2024</span>
+                    </div>
+                    <span class="exp-role">Team Lead</span>
+                    <ul class="exp-list">
+                        <li>Architected a scalable software solution for UNSDGs, leading a team of 4 through the full SDLC.</li>
+                        <li>Selected for the Regional Bootcamp (Top 10% of applicants) based on technical feasibility and system design.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="project-grid">
-                <div class="project-item">
-                    <h3>Threat Feed</h3>
-                    <p>Architected a high-throughput API in Go (Golang) to aggregate cybersecurity intelligence from 30+ RSS sources. Engineered a concurrent ingestion pipeline using the Fan-In pattern, reducing feed update latency by 80%.</p>
-                    <a href="https://github.com/code-grey" class="project-link">View Project</a>
+                <div class="card project-card">
+                    <h3>SafeRide</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Solana</span>
+                    </div>
+                    <p class="project-desc">Hackathon Qualifier: Developed within a 1-week sprint for the Trikaya Hiring Challenge.</p>
+                    <ul class="exp-list" style="margin-bottom: 20px; font-size: 0.9rem;">
+                        <li>Architected an Edge-to-Chain IoT network using Go and MQTT with Redis for state management.</li>
+                        <li>Engineered a low-latency Computer Vision pipeline (Python/MediaPipe) for Eye Aspect Ratio (EAR) fatigue detection.</li>
+                        <li>Implemented an immutable audit trail on the Solana Blockchain.</li>
+                        <li>Containerized microservices stack using Docker Compose.</li>
+                    </ul>
+                    <a href="#" class="project-link">View Code</a>
                 </div>
-                <div class="project-item">
-                    <h3>Synapse (WIP)</h3>
-                    <p>Developing a bookmark and GitHub stars ingestion engine to index user data and GitHub starred repositories for semantic search. Implemented a semaphore-based worker pool to concurrently fetch data from the GitHub API while strictly adhering to rate limits.</p>
-                    <a href="https://github.com/code-grey" class="project-link">View Project</a>
+
+                <div class="card project-card">
+                    <h3>ThreatFeed</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Gin</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Concurrency</span>
+                    </div>
+                    <p class="project-desc">A high-throughput threat intelligence API aggregating data from 30+ sources.</p>
+                    <ul class="exp-list" style="margin-bottom: 20px; font-size: 0.9rem;">
+                        <li>Used Fan-In concurrency pattern to aggregate data sources.</li>
+                        <li>Reduced data ingestion latency by 80% (10s → 2s) via concurrent Goroutines.</li>
+                        <li>Designed a thread-safe SQLite caching layer with mutex locking.</li>
+                    </ul>
+                    <a href="#" class="project-link">View Code</a>
                 </div>
-                <div class="project-item">
-                    <h3>Google Solution Challenge</h3>
-                    <p>Led a team to develop a software solution addressing UN Sustainable Development Goals (UNSDGs). The project was selected for the regional bootcamp, recognizing its potential impact and technical feasibility.</p>
-                    <a href="https://github.com/code-grey" class="project-link">View Project</a>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="card skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-list">
+                        Go (Golang), Python, C, C++, SQL, Bash, JavaScript
+                    </div>
+                </div>
+                <div class="card skill-category">
+                    <h3>Backend & Cloud</h3>
+                    <div class="skill-list">
+                        Docker, Kubernetes, Gin, gRPC, MQTT, Redis, AWS, Nginx, Solana (Go SDK)
+                    </div>
+                </div>
+                <div class="card skill-category">
+                    <h3>Security & Tools</h3>
+                    <div class="skill-list">
+                        BurpSuite, Wireshark, Nmap, Git/GitHub Actions, Linux (Kali/Ubuntu)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2 class="section-title">Awards</h2>
+            <div class="timeline">
+                <div class="card">
+                    <h3>Regional Finalist</h3>
+                    <p style="color: #aaa; margin-top: 5px;">Google Solution Challenge 2024 (Selected for Bootcamp)</p>
+                </div>
+                <div class="card">
+                    <h3>State Merit Award</h3>
+                    <p style="color: #aaa; margin-top: 5px;">Dr. Banikanta Kakati Award (2022) & Anundoram Barooah Award (2020)</p>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>I'm passionate about building innovative solutions and am always open to new opportunities and collaborations. Feel free to reach out if you'd like to connect or have a project in mind.</p>
-            <a href="mailto:adrishbora@gmail.com" class="contact-button">Email Me</a>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="card contact-container">
+                <p class="contact-text">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>adrishbora@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 8761894886</span>
+                    </div>
+                </div>
+                <div class="social-icons" style="justify-content: center;">
+                    <a href="https://github.com/code-grey" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/adrishbora" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/code_grey_adr" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="social-links">
-            <a href="https://github.com/code-grey" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/adrishbora" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://twitter.com/code_grey_adr" target="_blank" rel="noopener noreferrer">X</a>
-        </div>
+        <p>&copy; 2025 Adrish Bora. Built with <i class="fas fa-heart"></i> and Code.</p>
     </footer>
 
+    <script src="assets/js/bg.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
