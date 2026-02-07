@@ -45,12 +45,6 @@
 
 <div align="center">
   <br />
-  <img src="https://streak-stats.demolab.com/?user=code-grey&theme=dark&hide_border=true&ring=f68c2d&fire=f68c2d&currStreakNum=f68c2d&sideNums=f68c2d&currStreakLabel=f68c2d&background=0d1117" alt="GitHub Streak" />
-</div>
-
-<br />
-
-<div align="center">
   <p>
     <a href="https://adrishbora.me">🌐 Visit my Portfolio Website</a>
   </p>
