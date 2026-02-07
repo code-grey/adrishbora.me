@@ -35,11 +35,11 @@
 <div align="center">
   <h3>📈 GitHub Stats</h3>
   <a href="https://github.com/code-grey">
-    <img src="https://github-readme-stats.vercel.app/api?username=code-grey&show_icons=true&theme=dark&hide_border=true&title_color=f68c2d&icon_color=f68c2d&bg_color=0d1117" alt="Adrish's GitHub Stats" />
+    <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=code-grey&show_icons=true&theme=dark&hide_border=true&title_color=f68c2d&icon_color=f68c2d&bg_color=0d1117" alt="Adrish's GitHub Stats" />
   </a>
   <br />
   <a href="https://github.com/code-grey">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=code-grey&layout=compact&theme=dark&hide_border=true&title_color=f68c2d&bg_color=0d1117" alt="Top Languages" />
+    <img src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=code-grey&layout=compact&theme=dark&hide_border=true&title_color=f68c2d&bg_color=0d1117" alt="Top Languages" />
   </a>
 </div>
 
